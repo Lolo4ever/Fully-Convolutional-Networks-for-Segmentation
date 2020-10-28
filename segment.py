@@ -1,4 +1,4 @@
-//segmented images
+#segmented images
 import os
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
@@ -36,7 +36,7 @@ plt.imshow(train_seg[idx][:,:,1])
 plt.axis('off')
 plt.show()
 
-//VGG16 model for encoder
+#VGG16 model for encoder
 
 
 model = VGG16(weights = 'imagenet')
